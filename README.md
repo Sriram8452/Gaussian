@@ -1,7 +1,28 @@
 # Gaussian Elimination
-
+Name:Sriram
+Ref No:22008452
 ## AIM:
 To write a program to find the solution of a matrix using Gaussian Elimination.
+## Algorithm
+1. Initialize a square matrix 'a' of size 'n' and a vector 'x' of size 'n' to store the solutions.
+2. Read the matrix elements and the right-hand side vector elements from the user.
+3. Loop through the rows of the matrix starting from the first row.
+4. Check if the pivot element (the element on the main diagonal) is zero. If it is, exit the program
+as it will result in a divide by zero error.
+5. Loop through the rows below the current row.
+6. Calculate the ratio of the element in the current column of the lower row to the pivot element.
+7. Loop through the columns of the lower row.
+8. Subtract the product of the ratio and the element in the current column of the upper row from
+the element in the current column of the lower row.
+9. Back substitute to find the solutions by starting from the last row and then moving towards the
+first row.
+10. Divide the element in the last column of the current row by the pivot element to find the
+solution for the current variable.
+11. Subtract the product of the solutions of the variables above the current variable and the
+corresponding elements in the current row from the element in the last column of the current
+row.
+12. Divide the result by the pivot element to find the solution for the current variable.
+13. Print the solutions
 
 ## Equipments Required:
 1. Hardware – PCs
